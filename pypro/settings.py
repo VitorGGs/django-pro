@@ -30,6 +30,7 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
+AUTH_USER_MODEL = 'base.User'
 
 # Application definition
 
@@ -107,9 +108,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -131,8 +132,7 @@ COLLECTFAST_ENABLED = False
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 COLLECTFAST_STRATEGY = 'collectfast.strategies.boto3.Boto3Strategy'
 
-AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
-
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID', default=False)
 # STORAGE AWS CONFIGS
 if AWS_ACCESS_KEY_ID:
     AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
