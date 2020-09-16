@@ -1,3 +1,68 @@
-.main-footer{
-    background-color: #9fd25f;
+:root {
+	--mainColor: #46344E;
+	--secondaryColor: #382a3f;
+
+	--borderColor: #1d1520;
+
+	--mainText: #fff;
+	--secondaryText: #eeeeee;
+}
+
+p, li, span, label, input, textarea {
+	color: var(--mainText);
+	font-family: 'Russo One', monospace;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#fundo {
+	background-color: var(--mainColor);
+}
+
+#img-logo {
+	border-radius: 0%;
+	max-height: 400px;
+	max-width: 400px;
+	display: block;
+	margin: auto;
+}
+
+.content {
+	background-color: var(--secondaryColor);
+
+	margin: 5px;
+	border: 1px solid var(--borderColor);
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+	cursor: pointer;
+}
+
+.content:hover {
+	border-width: 5px;
+}
+
+.anuncios {
+	text-align: center;
+	font-size: 32px;
+	padding: 20px;
+}
+
+#ifood-img {
+	display: block;
+	margin: auto;
+	max-height: 400px;
+	max-width: 400px;
+}
+
+#qr-code {
+	display: block;
+	margin: auto;
+}
+
+.footer-text {
+	color: var(--secondaryText);
 }

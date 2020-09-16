@@ -8,8 +8,11 @@
 
 	<title>Lamborgheria</title>
 
-	<meta name="description" content="Página do curso Python Pro">
+	<meta name="description" content="Lamborgheria Fast Food">
 	<meta name="author" content="Vitor Gabriel">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
 
 	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 	<link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -19,10 +22,48 @@
 
 </head>
 <body>
+	<div class="container-fluid" id="fundo">
+		<div class="row" id="logo-sec">
+			<div class="col-md-12">
+				<img src="{% static 'img/logop.png' %}" alt="logo da Lamborgheria" id="img-logo">
+			</div>
+		</div>
+	
+	
+		<div class="row">
+			<div class="col-md-6">
+				<a href="https://www.ifood.com.br/delivery/brasilia-df/lamborgheria-fast-food-arapoanga-planaltina/" target="_blank">
+					<div class="content h-100">
+						<p class="anuncios">Peça da sua casa</p>
+						<img src="{% static 'img/pngguru.com.png' %}" alt="logo do ifood" id="ifood-img">
+					</div>
+				</a>
+			</div>
 
-<h1>
-	Oi amor! Vamos fazer um site juntos! :)
-</h1>
+			<div class="col-md-6">
+				<a href="ifood://restaurant/8b2244be-313d-4a82-9cef-82f0ce5a6162/indoor/" target="_blank">
+					<div class="content h-100">
+						<p class="anuncios">Retire com desconto</p>
+						<br>
+						<img src="{% static 'img/qrcode.png' %}" alt="qr code" id="qr-code">
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+	<!-- Footer -->
+	<footer class="page-footer font-small special-color-dark pt-4">
+	  <!-- Copyright -->
+	  <div class="footer-copyright text-center py-3 footer-text">© 2020 Copyright:
+	    <a href="http://www.Lamborgheria.com.br/"> Lamborgheria</a>
+	  </div>
+	  <!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+</div>
+
 
 </body>
 </html>
